@@ -18,7 +18,7 @@ void mostrarMenu(double a, double b)
     printf( "\n5) Salir.\n");
 }
 
-int GetInt(char texto[], char error[], int menor,int mayor)
+int GetInt(char texto[], char error[], int minimo, int maximo)
 {
     int valida = 0;
     int numero;
@@ -28,7 +28,7 @@ int GetInt(char texto[], char error[], int menor,int mayor)
         fflush(stdin);
         scanf("%d",&numero);
 
-        if(numero <= menor || numero >= mayor)
+        if(numero <= minimo || numero >= maximo)
         {
             system("cls");
             printf("%s \n ",error);
