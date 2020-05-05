@@ -27,6 +27,17 @@ void mostrarMenu(double a, double b);
  */
 int GetInt(char texto[], char error[], int minimo, int maximo);
 
+/** \brief Obtiene un flotante
+ *
+ * \param texto[] char mensaje a mostrar
+ * \param error[] char mensaje de error
+ * \param minimo int
+ * \param maximo int
+ * \return int devuelve el numero obtenido
+ *
+ */
+float getFloat(char texto[], char error[], int minimo, int maximo);
+
 /** \brief suma dos numeros
  *
  * \param operador1 double

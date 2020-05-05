@@ -48,6 +48,35 @@ int GetInt(char texto[], char error[], int minimo, int maximo)
 
 }
 
+float getFloat(char texto[], char error[], int minimo, int maximo)
+{
+    int valida = 0;
+    float numero;
+    while(valida == 0 )
+    {
+        printf("%s \n",texto);
+        fflush(stdin);
+        scanf("%f",&numero);
+
+        if(numero <= minimo || numero >= maximo)
+        {
+            system("cls");
+            printf("%s \n ",error);
+            printf("El valor ingresado tiene que ser un numero de las opciones que se muestran:\n ( 1 ; 2 ; 3 ; 4 ; 5 )\n\n");
+            system("pause");
+            system("cls");
+            return 0;
+
+        }
+        else
+        {
+            valida=1;
+        }
+    }
+    return numero;
+
+}
+
 double Suma(double operador1, double operador2)
 {
     return operador1+operador2;
